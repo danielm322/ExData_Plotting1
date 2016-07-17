@@ -38,5 +38,5 @@ axis(side=1,at=c(subsdata$DateTime[1],subsdata$DateTime[1440],subsdata$DateTime[
 # Plot 4
 with(subsdata,plot(DateTime,Global_reactive_power,type="l",lwd=1,xaxt="n",xlab="datetime",ylab="Global_reactive_power"))
 axis(side=1,at=c(subsdata$DateTime[1],subsdata$DateTime[1440],subsdata$DateTime[2880]),labels=c("Thu","Fri","Sat"))
-dev.copy(png,"plot4.png")
+dev.copy(png,"plot4.png",width=480,height=480)
 dev.off()
